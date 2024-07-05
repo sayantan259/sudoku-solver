@@ -1,0 +1,65 @@
+/* Grid.css */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 0; /* Removing gaps to use borders instead */
+  margin: 20px auto;
+  width: 360px;
+  border: 2px solid #000; /* Outer border */
+}
+
+.row {
+  display: contents;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.cell:focus {
+  border-color: #ff9f29;
+  background-color: #ffecda;
+}
+
+.cell[data-highlight="true"] {
+  background-color: #ffecda;
+}
+
+.cell[data-fixed="true"] {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Adding borders to delineate the 3x3 subgrids */
+.cell:nth-child(3n) {
+  border-right: 2px solid #000;
+}
+
+.grid .row:nth-child(3n) .cell {
+  border-bottom: 2px solid #000;
+}
+
+.grid .row:nth-child(3n) .cell:nth-child(3n) {
+  border-right: 2px solid #000;
+}
+
+@media (max-width: 600px) {
+  /* Adjustments for smaller screens */
+  .grid {
+    width: 280px;
+  }
+
+  .cell {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}

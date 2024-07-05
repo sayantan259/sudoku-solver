@@ -1,0 +1,87 @@
+/* Home.css */
+
+.home {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  background-color: rgb(252, 255, 227);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.options {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+select {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1.2em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  /* Adjustments for smaller screens */
+  .content {
+    padding: 10px;
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+
+  select {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px 16px;
+    font-size: 1em;
+  }
+}
