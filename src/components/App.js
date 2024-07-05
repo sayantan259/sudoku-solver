@@ -77,7 +77,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>SolverSudoku</h1>
+      <h1>Solve Sudoku</h1>
       <div className="controls">
         <select
           id="difficulty"
